@@ -61,4 +61,5 @@ t.dot(10, "red")
 t.write("Центр (0,0)", font=("Arial", 10))
 
 t.hideturtle()
+turtle.done()
 
