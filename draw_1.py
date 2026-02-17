@@ -155,5 +155,113 @@ t.goto(-345, 105)
 t.goto(-350, 110)
 
 t.end_fill()
+t.penup()
+
+#Второй рисункок
+t.goto(-160, 140)
+t.pendown()
+t.fillcolor("pink")
+t.begin_fill()
+
+for _ in range(4):
+    t.forward(20)   # длина
+    t.right(90)
+t.end_fill()
+t.penup()
+
+#Рисуем ухо
+t.goto(-140, 140)
+t.pendown()
+
+t.fillcolor("pink")
+t.begin_fill()
+katet = 20
+
+t.forward(katet)      # первый катет
+t.left(90)            # поворот на 90 градусов
+t.forward(katet)      # второй катет
+t.goto(-140, 140)          # гипотенуза (возврат в начало)
+t.end_fill()
+
+#Рисуем туловище
+t.penup()
+t.goto(-140, 130)
+t.pendown()
+
+t.fillcolor("pink")
+t.begin_fill()
+katet = 50
+
+t.backward(katet)      # первый катет
+t.right(90)            # поворот на 90 градусов
+t.forward(katet)      # второй катет
+t.goto(-140, 130)          # гипотенуза (возврат в начало)
+t.end_fill()
+
+t.penup()
+t.goto(-60, 50)
+t.pendown()
+
+t.fillcolor("pink")
+t.begin_fill()
+katet = 50
+
+t.left(90)
+
+t.forward(katet)      # первый катет
+t.left(90)            # поворот на 90 градусов
+t.forward(katet)      # второй катет
+t.goto(-60, 50)          # гипотенуза (возврат в начало)
+t.end_fill()
+
+
+t.penup()
+t.goto(-120, 80)
+t.pendown()
+t.fillcolor("pink")
+t.begin_fill()
+
+t.left(45)
+for _ in range(2):
+    t.forward(800**0.5)   # длина
+    t.right(45)
+    t.forward(40)
+    t.right(135)
+t.end_fill()
+
+
+t.penup()
+t.goto(-60, 100)
+t.pendown()
+t.fillcolor("pink")
+t.begin_fill()
+
+t.left(135)
+
+t.forward(20)
+t.left(90)# второй катет
+t.forward(20)
+t.goto(-60, 100)          # гипотенуза (возврат в начало)
+t.end_fill()
+
+
+t.penup()
+t.goto(-60, 40)
+t.pendown()
+t.fillcolor("pink")
+
+t.begin_fill()
+t.setheading(270)
+t.forward(800**0.5/2)
+t.left(135)
+t.forward(800**0.5)
+t.left(90)
+t.forward(800**0.5)
+t.goto(-60, 40)
+t.end_fill()
+t.penup()
+t.end_fill()
+t.penup()
+t.end_fill()
 
 t.penup()
