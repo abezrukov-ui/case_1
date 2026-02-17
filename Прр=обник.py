@@ -39,6 +39,8 @@ def draw_grid_lines():
         t.pendown()
         t.goto(400, y)
 
+
+
 # Рисуем сетку
 draw_grid_lines()
 
@@ -157,3 +159,5 @@ t.goto(-350, 110)
 t.end_fill()
 
 t.penup()
+
+turtle.done()
