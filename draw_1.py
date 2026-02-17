@@ -264,6 +264,7 @@ t.end_fill()
 t.penup()
 t.end_fill()
 
+
 #Рисуем цветок
 t.penup()
 t.goto(70,20)
@@ -350,6 +351,107 @@ t.begin_fill()
 for _ in range(4):
     t.forward(20)
     t.left(90)
+t.end_fill()
+
+
+#Рисуем корабль
+t.penup()
+t.goto(240,60)
+t.pendown()
+
+#Рисуем край
+t.fillcolor("red")
+t.begin_fill()
+for _ in range(1):
+    t.forward(30)
+    t.left(90)
+    t.forward(30)
+    t.left(135)
+    t.forward(45)
+t.end_fill()
+
+t.penup()
+t.goto(270,75)
+t.pendown()
+
+#Рисуем корпус
+t.fillcolor("yellow")
+t.right(135)
+t.left(270)
+t.begin_fill()
+for _ in range(4):
+    t.forward(15)
+    t.left(90)
+    t.forward(15)
+t.end_fill()
+
+t.penup()
+t.goto(330,75)
+t.pendown()
+
+t.fillcolor("yellow")
+t.begin_fill()
+for _ in range(4):
+    t.forward(15)
+    t.left(90)
+    t.forward(15)
+t.end_fill()
+
+t.penup()
+t.goto(300,95)
+t.pendown()
+
+#Рисуем башню
+t.fillcolor("brown")
+t.begin_fill()
+for _ in range(2):
+    t.forward(50)
+    t.left(90)
+    t.forward(30)
+    t.left(90)
+    t.forward(35)
+t.end_fill()
+
+t.penup()
+t.goto(292,125)
+t.pendown()
+
+#Рисуем окно
+t.fillcolor("yellow")
+t.begin_fill()
+for _ in range(4):
+    t.forward(8)
+    t.left(90)
+    t.forward(8)
+t.end_fill()
+
+#Рисуем края
+t.penup()
+t.goto(330,90)
+t.pendown()
+t.right(90)
+t.fillcolor("red")
+t.begin_fill()
+t.forward(30)
+t.right(135)
+t.forward(45)
+t.end_fill()
+
+t.penup()
+t.goto(280,145)
+t.pendown()
+
+#Рисуем крышу
+t.fillcolor("red")
+t.begin_fill()
+t.left(135)
+t.forward(30)
+t.left(150)
+t.forward(30)
+t.left(60)
+t.forward(30)
+t.left(150)
+t.forward(30)
 t.end_fill()
 
 t.hideturtle()
