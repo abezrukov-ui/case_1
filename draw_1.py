@@ -264,4 +264,93 @@ t.end_fill()
 t.penup()
 t.end_fill()
 
+#Рисуем цветок
 t.penup()
+t.goto(70,20)
+t.pendown()
+
+#Рисуем горшок
+t.fillcolor("brown")
+t.left(225)
+t.begin_fill()
+for _ in range(2):
+    t.forward(60)
+    t.left(90)
+    t.forward(30)
+    t.left(90)
+t.end_fill()
+
+t.penup()
+t.goto(65,50)
+t.pendown()
+
+#Рисуем верхнюю часть горшка
+t.fillcolor("brown")
+t.begin_fill()
+for _ in range(2):
+    t.forward(70)
+    t.left(90)
+    t.forward(10)
+    t.left(90)
+t.end_fill()
+
+#Рисуем стебель
+t.penup()
+t.goto(100, 60)
+t.pendown()
+t.pensize(5)
+t.pencolor("green")
+t.left(90)
+t.forward(70)
+
+#Рисуем листья
+t.penup()
+t.goto(125, 75)
+t.pendown()
+t.fillcolor("green")
+t.begin_fill()
+for _ in range(3):
+    t.forward(25)
+    t.left(120)
+t.end_fill()
+
+t.penup()
+t.goto(80, 75)
+t.pendown()
+t.begin_fill()
+for _ in range(3):
+    t.forward(20)
+    t.right(120)
+t.end_fill()
+
+t.penup()
+t.goto(100, 140)
+t.pendown()
+
+#Рисуем лепестки
+t.pensize(1)
+circle_radius = 20
+for _ in range(6):
+    t.fillcolor("pink")
+    t.begin_fill()
+    t.circle(circle_radius)
+    t.end_fill()
+    t.penup()
+    t.left(240)
+    t.right(3 * circle_radius)
+    t.right(240)
+    t.pendown()
+
+#Рисуем сердцевину
+t.penup()
+t.goto(110,130)
+t.pendown()
+t.fillcolor("yellow")
+t.begin_fill()
+for _ in range(4):
+    t.forward(20)
+    t.left(90)
+t.end_fill()
+
+t.hideturtle()
+screen.exitonclick()
