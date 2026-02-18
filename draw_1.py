@@ -4,8 +4,8 @@ import turtle
 screen = turtle.Screen()
 screen.setup(800, 400)
 t = turtle.Turtle()
-t.speed(10)  # Ускоряем рисование
-t.pensize(3)  # Увеличиваем толщину линий
+t.speed(10)
+t.pensize(3)
 t.ht()
 
 #Создаем сетку
